@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Neon Code Editor</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="sidebar">
+
+            <h2 class="neon-text">File Explorer</h2>
+
+            <ul>
+
+                <li onclick="loadFile('index.html')">index.html</li>
+                <li onclick="loadFile('style.css')">style.css</li>
+                <li onclick="loadFile('script.js')">script.js</li>
+
+            </ul>
+
+        </div>
+
+        <div class="editor-container">
+
+            <div id="editor"></div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
